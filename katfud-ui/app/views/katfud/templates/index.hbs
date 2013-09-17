@@ -1,0 +1,123 @@
+<div class="row">
+  <div class="small-6 small-centered columns"><h1>KatFud <small>5000</small></h1></div>
+</div>
+
+<hr height="2" />
+
+<div class="row">
+  <div class="small-6 columns text-right"><h3>Current Feeder Time</h3></div>
+  <div class="small-6 columns"><div class="alert-box radius success" id="currentTime" /></div>
+</div>  
+
+<div class="row">
+  <div class="small-6 columns text-right"><h3>Next Run</h3></div>
+  <div class="small-6 columns"><div class="alert-box radius success" id="nextRun" /></div>
+</div>
+
+<hr height="2px" />
+
+<div class="row">
+  <div class="small-12 large-8 columns">
+    <div class="section-container auto" data-section="auto">
+      <section>
+        <p class="title" data-section-title><a>Details</a></p>
+        <div class="content" data-section-content>
+          <p>
+          <div class="row">
+            <div class="small-2 columns text-right">Ran</div>
+            <div class="small-10 columns"><strong id="lastRan" /></div>
+          </div>
+          </p>
+          <p>
+          <div class="row">
+            <div class="small-2 columns text-right">Feeds</div>
+            <div class="small-10 columns"><strong id="numberFeeds" /></div>
+          </div>
+          </p>
+          <p>
+          <div class="row">
+            <div class="small-2 columns text-right">Started</div>
+            <div class="small-10 columns"><strong id="started" /></div>
+          </div>
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <p class="title" data-section-title><a>Edit</a></p>
+        <div class="content" data-section-content>
+          <form class="custom">
+            <fieldset>
+              <legend>Settings</legend>
+
+              <div class="row">
+                <div class="small-7 columns">
+                  <label for="firstFeed" class="right inline">First Feed Time</label>
+                </div>
+                <div class="small-5 columns">
+                  <input id="firstFeed" type="datetime" data-datetimepicker placeholder="first time to feed">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="small-7 columns">
+                  <label for="period" class="right inline">Then Every</label>
+                </div>
+                <div class="small-2 columns">
+                  <input id="period" type="number" placeholder="0">
+                </div>
+                <div class="small-3 columns">
+                  <select id="periodScale" class="small" />
+                </div>                
+              </div>
+
+              <div class="row">
+                <div class="small-12 columns right">
+                  <button class="button alert radius" data-settings>Update Settings</button>
+                  <button class="tiny button radius" data-cancel-settings>Cancel Settings</button>
+                </div>
+              </div>              
+
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="small-12 large-4 columns">
+    <div class="actions">
+      <h5>Actions</h5>
+      <div class="row">
+        <div class="small-2 columns">
+          <label for="code" class="inline">Code</label>
+        </div>
+        <div class="small-10 columns">
+          <input id="code" type="text" placeholder="security code">
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 small-centered columns">
+          <button class="small button alert radius" data-run>Run Now</button>
+          <button class="small button alert radius" data-reboot>Reboot</button>
+          <button class="small button alert radius" data-shutdown>Shutdown</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 columns">
+    <table>
+      <tr>
+        <td>
+          <h3>KatFud External URL</h3>
+        </td>
+        <td >
+          <a style="padding-left: 10px" href="" id="fud-url"></a>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
