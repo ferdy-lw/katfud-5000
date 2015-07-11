@@ -15,16 +15,16 @@
     "start": "brunch watch --server"
   },
   "dependencies": {
-    "javascript-brunch": "> 1.5 < 1.6",
+    "javascript-brunch": "> 1.5.0 < 1.6.0",
     "coffee-script-brunch": "git://github.com/brunch/coffee-script-brunch.git",    
 
-    "css-brunch": "> 1.5 < 1.6",
-    "sass-brunch": "> 1.5 < 1.6",
+    "css-brunch": "> 1.5.0 < 1.6.0",
+    "sass-brunch": "> 1.5.0 < 1.6.0",
 
-    "handlebars-brunch": "> 1.5 < 1.6",
+    "handlebars-brunch": "> 1.5.0 < 1.6.0",
 
-    "uglify-js-brunch": "> 1.5 < 1.6",
-    "clean-css-brunch": "> 1.5 < 1.6",
+    "uglify-js-brunch": "> 1.5.0 < 1.6.0",
+    "clean-css-brunch": "> 1.5.0 < 1.6.0",
     "auto-reload-brunch": "git://github.com/brunch/auto-reload-brunch.git"
   },
   "devDependencies": {
