@@ -37,7 +37,7 @@ The web app is a simply Python Pyramid app and runs just using the paster engine
 - ```mkvirtualenv katfud```
 - ```workon katfud```
 - ```$ cd KatFud```
-- ```python setup.py```
+- ```python setup.py develop```
 
 ### katfud-ui
 
