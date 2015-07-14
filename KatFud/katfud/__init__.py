@@ -25,6 +25,8 @@ def main(global_config, **settings):
             signal.signal(sig, signal_handler)
 
     config = Configurator(settings=settings)
+    config.include('pyramid_mako')
+    config.include('pyramid_chameleon')
     config.add_static_view('static', 'static', cache_max_age=3600)
     config.add_route('home', '/')
     config.add_route('katfud', '/v1/katfud')
